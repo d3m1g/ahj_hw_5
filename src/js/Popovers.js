@@ -1,3 +1,4 @@
+/* eslint-disable eol-last */
 export default class Popovers {
  constructor(parentEl) {
   this.parentEl = parentEl;

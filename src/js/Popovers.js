@@ -4,7 +4,7 @@ export default class Popovers {
     this.parentEl = parentEl;
   }
 
- static get markup() {
+  static get markup() {
     return `
      <div class="wrapper">
        <div class="popover">
@@ -14,25 +14,25 @@ export default class Popovers {
        <button type="button" title="Popover title">Click to toggle popover</button>
      </div>
    `;
- }
+  }
 
- static get buttonSelector() {
-  return 'button';
- }
+  static get buttonSelector() {
+    return 'button';
+  }
 
- static get popoverSelector() {
-  return '.popover';
- }
+  static get popoverSelector() {
+    return '.popover';
+  }
 
- bindToDOM() {
-  this.parentEl.innerHTML = this.constructor.markup;
+  bindToDOM() {
+    this.parentEl.innerHTML = this.constructor.markup;
 
-  const click = this.parentEl.querySelector(this.constructor.buttonSelector);
-  click.addEventListener('click', () => this.onClick());
- }
+    const click = this.parentEl.querySelector(this.constructor.buttonSelector);
+    click.addEventListener('click', () => this.onClick());
+  }
 
- onClick() {
-  const popover = this.parentEl.querySelector(this.constructor.popoverSelector);
-  popover.classList.toggle('active');
- }
+  onClick() {
+    const popover = this.parentEl.querySelector(this.constructor.popoverSelector);
+    popover.classList.toggle('active');
+  }
 }

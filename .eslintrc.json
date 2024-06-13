@@ -5,8 +5,7 @@
   "browser": true,
   "jest": true
  },
- "rules": {
-  "rules": {"indent":"0"},
+ "rules": {  
   "no-restricted-syntax": [
    "error",
    "LabeledStatement",

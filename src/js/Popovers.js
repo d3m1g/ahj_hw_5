@@ -1,11 +1,11 @@
 /* eslint-disable eol-last */
 export default class Popovers {
- constructor(parentEl) {
-  this.parentEl = parentEl;
- }
+  constructor(parentEl) {
+    this.parentEl = parentEl;
+  }
 
  static get markup() {
-  return `
+    return `
      <div class="wrapper">
        <div class="popover">
          <h3 class="popover-header">Popover title</h3>
